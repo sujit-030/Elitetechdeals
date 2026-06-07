@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="EliteTech Deals - Discover premium tech & luxury products with exclusive offers">
+  <title>EliteTech Deals | Discover Premium Tech & Luxury Products</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header id="site-header">
+    <div class="nav-container">
+      <a class="logo" href="index.html">ELITETECH DEALS</a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="deals.html">Deals</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#" onclick="openModal('contactModal');return false;">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="menuBtn" class="menu-btn" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h1>Discover Premium Tech &amp;<br>Luxury Products</h1>
+          <p>Handpicked ultra-premium electronics and high-end lifestyle assets with exclusive offers.</p>
+          <a class="cta-btn" href="deals.html">Explore Deals</a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg width="380" height="280" viewBox="0 0 380 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="380" height="280" rx="20" fill="url(#g)" opacity="0.06"/>
+            <defs>
+              <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#D4AF37"/>
+                <stop offset="1" stop-color="#b78f1a"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section id="categories">
+      <h2 class="section-title">Featured Categories</h2>
+      <div class="categories-grid">
+        <a class="category-card" href="products.html#smartphones"><i class="fa-solid fa-mobile-button" aria-hidden="true"></i><h3>Smartphones</h3></a>
+        <a class="category-card" href="products.html#laptops"><i class="fa-solid fa-laptop" aria-hidden="true"></i><h3>Laptops</h3></a>
+        <a class="category-card" href="products.html#gaming"><i class="fa-solid fa-gamepad" aria-hidden="true"></i><h3>Gaming</h3></a>
+        <a class="category-card" href="products.html#smarthome"><i class="fa-solid fa-house-laptop" aria-hidden="true"></i><h3>Smart Home</h3></a>
+        <a class="category-card" href="products.html#audio"><i class="fa-solid fa-headphones-simple" aria-hidden="true"></i><h3>Audio Devices</h3></a>
+        <a class="category-card" href="products.html#watches"><i class="fa-solid fa-stopwatch" aria-hidden="true"></i><h3>Luxury Watches</h3></a>
+      </div>
+    </section>
+
+    <!-- Brands -->
+    <section class="brands-section">
+      <h2 class="section-title">Featured Brands</h2>
+      <div class="brands-slider">
+        <div class="brand-logo">APPLE</div>
+        <div class="brand-logo">SAMSUNG</div>
+        <div class="brand-logo">SONY</div>
+        <div class="brand-logo">ASUS</div>
+        <div class="brand-logo">LENOVO</div>
+        <div class="brand-logo">DELL</div>
+      </div>
+    </section>
+
+    <!-- Trending Deals -->
+    <section id="trending">
+      <h2 class="section-title">Trending Luxury Deals</h2>
+      <div class="products-grid">
+        <article class="product-card">
+          <div class="product-img"><span class="badge">Save 15%</span><i class="fa-solid fa-laptop"></i></div>
+          <div class="product-info"><h3>Ultra Thin Luxury Laptop - Studio Edition</h3>
+            <div class="price-container"><span class="current-price">$2,499</span><span class="old-price">$2,899</span></div>
+            <a class="buy-btn" data-aff-platform="amazon" data-aff-url="https://www.amazon.com/dp/B08EXAMPLE" data-aff-campaign="laptop_launch">Buy from Amazon</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-img"><span class="badge">Limited</span><i class="fa-solid fa-headphones"></i></div>
+          <div class="product-info"><h3>Audiophile Signature ANC Headphones</h3>
+            <div class="price-container"><span class="current-price">$549</span><span class="old-price">$699</span></div>
+            <a class="buy-btn" data-aff-platform="walmart" data-aff-url="https://www.walmart.com/ip/EXAMPLE" data-aff-campaign="audio_drop">Check on Walmart</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-img"><span class="badge">Hot Deal</span><i class="fa-solid fa-stopwatch"></i></div>
+          <div class="product-info"><h3>Titanium Chronograph Smart Watch</h3>
+            <div class="price-container"><span class="current-price">$1,150</span><span class="old-price">$1,400</span></div>
+            <a class="buy-btn" data-aff-platform="partner" data-aff-url="#" data-aff-campaign="watch_promo">View Partner Deal</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog-teaser">
+      <h2 class="section-title">Expert Editorial</h2>
+      <div class="blog-grid">
+        <article class="blog-card"><div class="blog-content"><div class="blog-meta">Latest Reviews</div><h3>The Anatomy of Next-Gen Mobile Architecture</h3><p>An in-depth professional evaluation of this year's ultra-premium smartphone flagships and processing capabilities.</p><a class="read-more" href="blog.html">Read Essay <i class="fa-solid fa-arrow-right"></i></a></div></article>
+        <article class="blog-card"><div class="blog-content"><div class="blog-meta">Buying Guides</div><h3>Designing The Ultimate Minimalist Smart Ecosystem</h3><p>A comprehensive blueprint to integrating elite automation machinery without compromising elegant architectural aesthetics.</p><a class="read-more" href="blog.html">Read Essay <i class="fa-solid fa-arrow-right"></i></a></div></article>
+        <article class="blog-card"><div class="blog-content"><div class="blog-meta">Tech News</div><h3>The Convergence of Traditional Horology &amp; AI Tech</h3><p>How heritage European watchmakers are adopting biometric neural processing inside hand-assembled luxury timepieces.</p><a class="read-more" href="blog.html">Read Essay <i class="fa-solid fa-arrow-right"></i></a></div></article>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="newsletter-box">
+        <h2>Join The Elite Collective</h2>
+        <p>Receive weekly private updates on global liquidation events, pricing errors, and luxury drops.</p>
+        <form id="newsletterForm" class="search-box">
+          <input type="email" name="email" placeholder="Enter your private email address..." required aria-label="Email address">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col"><h4>ELITETECH DEALS</h4><p>A curated syndicate specializing in aggregating global high-end engineering, consumer electronic deals, and premium luxury tech systems.</p>
+        <div class="social-icons"><a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></div>
+      </div>
+      <div class="footer-col"><h4>Navigation</h4><ul><li><a href="index.html">Home</a></li><li><a href="deals.html">Trending Offers</a></li><li><a href="blog.html">Editorial Articles</a></li><li><a href="#" onclick="openModal('contactModal');return false;">Corporate Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Compliance &amp; Law</h4><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="disclosure.html">Affiliate Disclosure</a></li><li><a href="#" onclick="openModal('termsModal');return false;">Terms of Service</a></li></ul></div>
+    </div>
+    <div class="disclosure-box"><strong>Institutional Affiliate Disclosure:</strong> EliteTech Deals participates in affiliate ecosystems including Amazon Associates, Walmart Affiliate Network, CJ Affiliate, Impact, ShareASale, and eBay Partner Network. Purchases through links may generate a commission at no extra cost to you.</div>
+    <div class="copyright">&copy; 2026 EliteTech Deals. Engineered to Perfection. All Rights Reserved.</div>
+  </footer>
+
+  <!-- Modals -->
+  <div id="contactModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content"><button class="close-modal" onclick="closeModal('contactModal')" aria-label="Close">&times;</button><h2>Corporate Relations</h2><p>For partnership inquiries, submit a ticket below.</p>
+      <form id="contactForm" class="form-group"><input name="name" type="text" placeholder="Full Name" required><input name="email" type="email" placeholder="Business Email" required><textarea name="message" placeholder="Your Proposal" required></textarea><button type="submit" class="cta-btn">Dispatch System</button></form>
+    </div>
+  </div>
+
+  <div id="privacyModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content"><button class="close-modal" onclick="closeModal('privacyModal')" aria-label="Close">&times;</button><h2>Privacy Policy</h2><p>We collect analytical metadata to optimize site rendering, safe session loads, and secure affiliate transit processing. We do not sell personal data.</p></div>
+  </div>
+
+  <div id="disclosureModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content"><button class="close-modal" onclick="closeModal('disclosureModal')" aria-label="Close">&times;</button><h2>Affiliate Disclosure Statement</h2><p>Links on EliteTech Deals may generate commissions used to operate our service. We comply with FTC guidelines.</p></div>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
